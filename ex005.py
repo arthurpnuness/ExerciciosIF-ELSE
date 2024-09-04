@@ -1,24 +1,31 @@
-'''Faça um algoritmo que leia dois valores. Posteriormente leia uma opção do menu:  
-Somar os dois valores.
-Subtrair os dois valores.
-Multiplicar os dois valores.
-Dividir os dois valores
+'''
+Este código apresenta qual veículo o usuário pode dirigir com base no tipo da carteira de motorista
 '''
 
-num1 = int(input('Digite um número: '))
-num2 = int(input('Digite outro número: '))
+## Interação com o usuário
+nome = input('Digite seu nome: ')
+print('A - ')
+print('B - ')
+print('C - ')
+print('D - ')
+print('E - ')
+opcao = input('Digite sua resposta: ').upper()
 
-opcao = input('Se voce querer somar os valores digite (soma) - Se voce quer subtrair digite (subtratir) - Se voce quer multiplicar digite (multiplicação) - Se voce quiser dividir digite (divisão): ') .upper()
-
-if opcao == 'SOMA':
-    soma = num1 + num2
-    print(f'A soma entre {num1} e {num2} é: {soma}')
-elif opcao == 'SUBTRAIR':
-    sub = num1 - num2
-    print(f'A subtração entre {num1} e {num2} é: {sub}')
-elif opcao == 'MULTIPLICAÇÃO':
-    multi = num1 * num2
-    print(f'A soma entre {num1} e {num2} é: {multi}')
+## Estruturas Condicionais e exibição do resultado
+if opcao == 'A':
+    print(f'{nome} voce pode dirigir Motos e Triciclos')
+elif opcao == 'B':
+    print(f'{nome} voce pode dirigir Carros de Passeio')
+elif opcao == 'C':
+    print(f'{nome} voce pode dirigir Veiculos de Carga acima de 3,5 TON')
+elif opcao == 'D':
+    print(f'{nome} voce pode dirigir Veiculos com mais de 8 passageiros')
 else:
-    div = num1 / num2
-    print(f'A divisão entre {num1} e {num2} é: {div}')
+    print(f'{nome} voce pode dirigir Veiculos unidade acoplada acima de 6 TON')
+
+
+
+
+
+
+

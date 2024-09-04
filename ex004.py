@@ -1,26 +1,30 @@
-'''
-Um professor quer fazer um algoritmo para testar se uma questão de múltipla escolha está certa. Para isso, leia a questão assinalada pelo aluno e verifique:
-A - resposta errada
-B - resposta certa
-C - resposta errada
-D - resposta errada
+'''Neste código le dois valores. Apresenta algumas opções no menu, onde o usuário seleciona a que quer:  
+Somar os dois valores.
+Subtrair os dois valores.
+Multiplicar os dois valores.
+Dividir os dois valores
 '''
 
-print('Qual foi o ano em que o brasil foi Campeao Da Copa do Mundo? ')
-print('A para 2006')
-print('B para 2002')
-print('C para 1998')
-print('D para 1994')
-opcao = input('Digite a sua resposta: ').upper()
+## Interação com o usuário
+num1 = int(input('Digite um número: '))
+num2 = int(input('Digite outro número: '))
+print('Escolha qual operação aritmética voce quer fazer')
+print('Soma')
+print('Subtrair')
+print('Multiplicação')
+print('Divisão')
+opcao = input('Digite a operação que voce queira fazer: ') .upper()
 
-if opcao == 'A':
-    print('Resposta incorreta')
-elif opcao == 'B':
-    print('Resposta Correta, parabéns')
-elif opcao == 'C':
-    print('Resposta Incorreta')
-elif opcao == 'D':
-    print('Resposta Incorreta')
+## Estruturas Condicionais e exibição do resultado
+if opcao == 'SOMA':
+    soma = num1 + num2
+    print(f'A soma entre {num1} e {num2} é: {soma}')
+elif opcao == 'SUBTRAIR':
+    sub = num1 - num2
+    print(f'A subtração entre {num1} e {num2} é: {sub}')
+elif opcao == 'MULTIPLICAÇÃO':
+    multi = num1 * num2
+    print(f'A soma entre {num1} e {num2} é: {multi}')
 else:
-    print('Resposta Invalida')
-
+    div = num1 / num2
+    print(f'A divisão entre {num1} e {num2} é: {div}')

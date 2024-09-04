@@ -1,9 +1,18 @@
+'''Neste código foi feito um algoritmo que le dois valores e apresentamos:
+O maior deles
+O menor deles
+Também o algoritmo deve verificar se os valores digitados são iguais
+'''
 
-## Como saber se a letra digita é vogal ou consoante 
+## Interação com o usuário
+num1 = int(input('Digite um numero: '))
+num2 = int(input('Digite um numero: '))
 
-letra = input('Digite uma letra: ').upper()
- 
-if (letra == 'A') or (letra == 'E') or (letra == 'I') or (letra == 'O') or (letra == 'U'):
-    print('A letra é uma Vogal')
-else:
-    print('A letra é uma Consoante')
+## Estruturas Condicionais e exibição do resultado
+if num1 == num2:
+    print('Os numeros são iguais')
+elif num1 > num2:
+    print(f'O maior numero entre eles é o {num1}')
+elif num2 > num1:
+    print(f'O maior numero entre eles é o {num2}')
+
